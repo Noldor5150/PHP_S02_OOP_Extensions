@@ -28,7 +28,7 @@ class Wife extends Girlfriend{
 class HorribleWife extends Girlfriend {
     
     public function pistiProta(){
-        parent::pistiProta() . 'noretum is kiemo puses?';
+        return parent::pistiProta() . 'noretum is kiemo puses?';
     }
     
 }
