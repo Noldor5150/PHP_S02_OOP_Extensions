@@ -2,7 +2,13 @@
 
 class Girl{
     
-    public function beSmart(){
+    protected $age;
+    
+        public function __construct($age) {
+        $this->age = $age;
+    }
+
+        public function beSmart(){
         return 'smart';
     }
     
@@ -28,8 +34,13 @@ class Wife extends Girlfriend{
 class HorribleWife extends Girlfriend {
     
     public function pistiProta(){
-        return parent::pistiProta() . 'noretum is kiemo puses?';
+        return parent::pistiProta() . ' noretum is kiemo puses?';
     }
     
 }
     
+$boba = new HorribleWife(20);
+$message = $boba->pistiProta();
+print $message;
+
+var_dump($boba);
