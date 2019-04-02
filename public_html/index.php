@@ -17,9 +17,19 @@ class Girlfriend extends Girl{
         return 'alio jebat';
     }
 }
-    class Wife extends Girlfriend{
+
+class Wife extends Girlfriend{
         
         public function  pistiProta(){
             return 'gal rytoj?';
         }
-    }    
+    } 
+
+class HorribleWife extends Girlfriend {
+    
+    public function pistiProta(){
+        parent::pistiProta() . 'noretum is kiemo puses?';
+    }
+    
+}
+    
