@@ -10,3 +10,16 @@ class Girl{
         return 'beautiful';
     }
 }
+
+class Girlfriend extends Girl{
+    
+    public function pistiProta(){
+        return 'alio jebat';
+    }
+}
+    class Wife extends Girlfriend{
+        
+        public function  pistiProta(){
+            return 'gal rytoj?';
+        }
+    }    
